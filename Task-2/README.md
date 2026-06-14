@@ -1,6 +1,6 @@
 # Task-2: Build Your Personal Cybersecurity Lab
 
-## Summerix Global Virtual Internship – Cybersecurity & Ethical Hacking
+## Sumerix Global Virtual Internship – Cybersecurity & Ethical Hacking
 
 ### Objective
 Built a personal cybersecurity lab using Kali Linux, VirtualBox, Docker, and OWASP Juice Shop for ethical hacking practice, network monitoring, and web security testing.
