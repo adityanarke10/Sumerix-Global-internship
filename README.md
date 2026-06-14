@@ -1,4 +1,4 @@
-🛡️ Summerix Global Virtual Internship – Cybersecurity & Ethical Hacking
+🛡️ Sumerix Global Virtual Internship – Cybersecurity & Ethical Hacking
 
 This repository contains the tasks, reports, practical implementations, and documentation completed during my Summerix Global Virtual Internship under the Cybersecurity & Ethical Hacking domain.
 
@@ -6,10 +6,10 @@ The internship focused on developing practical cybersecurity knowledge through h
 
 📌 Internship Details
 
-Internship Program:Summerix Global Virtual Internship
+Internship Program:Sumerix Global Virtual Internship
 Domain: Cybersecurity & Ethical Hacking
 Intern Name: Aditya Narke
-Duration:*Summer Internship Program
+Duration:Summer Internship Program
 Mode: Virtual Internship
 
 ---
