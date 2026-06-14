@@ -1,8 +1,8 @@
 # 🔐 Cybersecurity Threat Intelligence Report (2024–2025)
 
-## Summerix Global Virtual Internship – Cybersecurity & Ethical Hacking
+## Sumerix Global Virtual Internship – Cybersecurity & Ethical Hacking
 
-This repository contains my **Task-1: Cybersecurity Threat Intelligence Report**, completed as part of the **Summerix Global Virtual Internship – Cybersecurity & Ethical Hacking** program.
+This repository contains my **Task-1: Cybersecurity Threat Intelligence Report**, completed as part of the **Sumerix Global Virtual Internship – Cybersecurity & Ethical Hacking** program.
 
 ---
 
