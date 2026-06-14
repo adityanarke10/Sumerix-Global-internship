@@ -1,6 +1,6 @@
 🛡️ Summerix Global Virtual Internship – Cybersecurity & Ethical Hacking
 
-This repository contains the tasks, reports, practical implementations, and documentation completed during my **Summerix Global Virtual Internship under the Cybersecurity & Ethical Hacking domain.
+This repository contains the tasks, reports, practical implementations, and documentation completed during my Summerix Global Virtual Internship under the Cybersecurity & Ethical Hacking domain.
 
 The internship focused on developing practical cybersecurity knowledge through hands-on activities, research, cybersecurity lab setup, and ethical hacking fundamentals.
 
