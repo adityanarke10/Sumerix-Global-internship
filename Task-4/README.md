@@ -1,183 +1,220 @@
+# Vulnerability Remediation and Security Review
 
-Vulnerability Remediation and Security Review
-📌 Project Overview
-This repository contains Task 4 of the Sumerix Global Cybersecurity & Ethical Hacking Internship Program. The task focused on reviewing the vulnerabilities identified during the previous assessment of OWASP Juice Shop, understanding their security impact, studying remediation techniques, and preparing recommendations to improve the overall security posture of the application.
+## Project Overview
 
-The objective was not to perform additional exploitation or penetration testing, but to analyze existing findings from a defensive security perspective and understand how cybersecurity professionals mitigate risks through secure configuration practices and industry-standard security controls.
+This repository contains **Task 4** of the **Sumerix Global Cybersecurity & Ethical Hacking Internship Program**. The task focused on reviewing vulnerabilities identified during the OWASP Juice Shop vulnerability assessment, analyzing their security impact, studying remediation techniques, and preparing recommendations to improve the overall security posture of the application.
 
-🎯 Objectives
-Review vulnerabilities identified during the vulnerability assessment phase.
+The objective was to understand how cybersecurity professionals review findings, prioritize risks, and implement security improvements through remediation planning and secure configuration practices.
 
-Analyze the security impact of identified weaknesses.
+---
 
-Study vulnerability remediation methodologies.
+## Objectives
 
-Understand secure configuration practices.
+- Review previously identified vulnerabilities.
+- Analyze security weaknesses discovered during assessment activities.
+- Study vulnerability remediation methodologies.
+- Understand secure configuration practices.
+- Learn OWASP security best practices.
+- Develop practical security recommendations.
+- Improve web application security posture.
+- Strengthen cybersecurity reporting and documentation skills.
 
-Learn OWASP security best practices.
+---
 
-Develop practical security recommendations.
+## Tools and Technologies Used
 
-Improve understanding of web application hardening techniques.
+| Tool | Purpose |
+|--------|----------|
+| Kali Linux | Security Testing Environment |
+| Nmap | Network and Service Analysis |
+| Nikto | Vulnerability Assessment Review |
+| Dirsearch | Directory Enumeration Review |
+| Docker | Application Hosting Environment |
+| Firefox Browser | Web Application Access |
+| OWASP Documentation | Security Best Practices Research |
+| Nano Text Editor | Documentation Preparation |
 
-Strengthen cybersecurity reporting and documentation skills.
+---
 
-🛠️ Tools and Technologies Used
-Tool	Purpose
-Kali Linux	Security Testing Environment
-Nmap	Network and Service Analysis
-Nikto	Web Vulnerability Assessment Review
-Dirsearch	Directory Enumeration Review
-Docker	OWASP Juice Shop Hosting Environment
-Firefox Browser	Web Application Access
-OWASP Documentation	Security Best Practices Research
-Nano Text Editor	Documentation Preparation
+## Activities Performed
 
-🔍 Activities Performed
-1. Review of Network Findings
-Previously collected Nmap scan results were reviewed to analyze exposed services and understand potential attack surfaces. Service accessibility and network exposure were evaluated from a defensive security perspective to identify areas requiring additional security controls.
+### 1. Review of Network Findings
 
-2. Review of Vulnerability Assessment Findings
-Nikto scan results were analyzed to understand security weaknesses identified during the assessment process. Special attention was given to missing security headers, insecure configurations, and application-level security observations.
+Reviewed Nmap scan results to analyze exposed services and understand potential attack surfaces. Previously identified services were evaluated from a defensive security perspective to determine associated risks and security implications.
 
-3. Review of Directory Enumeration Findings
-Directory enumeration results obtained using Dirsearch were reviewed to identify publicly accessible resources, exposed application endpoints, and documentation paths that could contribute to information disclosure risks.
+### 2. Review of Vulnerability Findings
 
-4. Vulnerability Remediation Planning
-A remediation strategy was prepared for each identified finding. Security recommendations were developed based on industry-standard practices and OWASP guidelines to reduce risk exposure and improve application security.
+Reviewed Nikto scan findings and analyzed security weaknesses identified during the assessment process. Missing security headers and insecure configurations were examined to understand their potential impact.
 
-5. OWASP Security Best Practices Study
-OWASP documentation and secure development resources were studied to understand modern web application security controls, secure header implementation, and vulnerability mitigation techniques.
+### 3. Review of Directory Enumeration Findings
 
-🚨 Security Findings and Recommendations
-Finding 1 – Missing Strict-Transport-Security (HSTS) Header
-Severity: Medium
+Reviewed Dirsearch results to identify publicly accessible resources, exposed API endpoints, and application documentation that could contribute to information disclosure risks.
 
-Description:
-The application does not enforce HTTP Strict Transport Security (HSTS), allowing browsers to communicate using potentially insecure HTTP connections.
+### 4. Remediation Planning
 
-Impact:
-Increases the risk of downgrade attacks and interception of communication channels.
+Prepared remediation recommendations for identified security findings. Security improvement measures were documented to reduce attack surface and strengthen overall application security.
 
-Recommendation:
-Implement HSTS and enforce HTTPS communication across the application.
+### 5. OWASP Security Best Practices Study
 
-Finding 2 – Missing Content-Security-Policy (CSP) Header
-Severity: Medium
+Studied OWASP security guidelines, secure header implementation techniques, and web application hardening concepts to understand modern defensive security practices.
 
-Description:
+---
+
+## Security Findings and Recommendations
+
+### Finding 1 – Missing Strict-Transport-Security (HSTS) Header
+
+**Severity:** Medium
+
+**Description:**  
+The application does not enforce HTTP Strict Transport Security (HSTS).
+
+**Impact:**  
+Potential exposure to downgrade attacks and insecure communication channels.
+
+**Recommendation:**  
+Implement HSTS and enforce HTTPS communication.
+
+---
+
+### Finding 2 – Missing Content-Security-Policy (CSP) Header
+
+**Severity:** Medium
+
+**Description:**  
 The application does not define a Content Security Policy.
 
-Impact:
-Increases exposure to client-side attacks such as Cross-Site Scripting (XSS).
+**Impact:**  
+Increased exposure to client-side attacks such as Cross-Site Scripting (XSS).
 
-Recommendation:
-Implement a restrictive CSP policy to control script execution and resource loading.
+**Recommendation:**  
+Implement a restrictive Content Security Policy.
 
-Finding 3 – Missing Referrer-Policy Header
-Severity: Low
+---
 
-Description:
+### Finding 3 – Missing Referrer-Policy Header
+
+**Severity:** Low
+
+**Description:**  
 The Referrer-Policy header is not configured.
 
-Impact:
-Sensitive URL information may be unintentionally disclosed to third-party resources.
+**Impact:**  
+Sensitive URL information may be disclosed to external resources.
 
-Recommendation:
+**Recommendation:**  
 Configure an appropriate Referrer-Policy header.
 
-Finding 4 – Missing Permissions-Policy Header
-Severity: Low
+---
 
-Description:
+### Finding 4 – Missing Permissions-Policy Header
+
+**Severity:** Low
+
+**Description:**  
 Browser permissions and features are not explicitly restricted.
 
-Impact:
-Unnecessary browser functionality may remain available to web applications.
+**Impact:**  
+Unnecessary browser functionality may remain available.
 
-Recommendation:
-Implement a Permissions-Policy header to control browser capabilities.
+**Recommendation:**  
+Implement a Permissions-Policy header.
 
-Finding 5 – Accessible robots.txt File
-Severity: Low
+---
 
-Description:
-The robots.txt file is publicly accessible and may reveal application paths.
+### Finding 5 – Accessible robots.txt File
 
-Impact:
-Can assist attackers during reconnaissance activities.
+**Severity:** Low
 
-Recommendation:
-Review the contents of robots.txt and avoid exposing sensitive information.
+**Description:**  
+The robots.txt file is publicly accessible.
 
-Finding 6 – Wildcard CORS Configuration
-Severity: Medium
+**Impact:**  
+May reveal useful application paths during reconnaissance activities.
 
-Description:
+**Recommendation:**  
+Review robots.txt content and avoid exposing sensitive information.
+
+---
+
+### Finding 6 – Wildcard CORS Configuration
+
+**Severity:** Medium
+
+**Description:**  
 The application permits unrestricted cross-origin requests.
 
-Impact:
-May allow unauthorized domains to interact with application resources.
+**Impact:**  
+Potential misuse by unauthorized external domains.
 
-Recommendation:
-Restrict CORS access to trusted and approved domains only.
+**Recommendation:**  
+Restrict CORS access to trusted domains only.
 
-Finding 7 – Exposed API Documentation and Endpoints
-Severity: Medium
+---
 
-Description:
+### Finding 7 – Exposed API Documentation and Endpoints
+
+**Severity:** Medium
+
+**Description:**  
 Publicly accessible API documentation and endpoints were identified.
 
-Impact:
-May provide attackers with useful information during reconnaissance.
+**Impact:**  
+May provide information useful to attackers during reconnaissance.
 
-Recommendation:
-Restrict access to sensitive documentation and review endpoint exposure.
+**Recommendation:**  
+Restrict access to sensitive documentation and review publicly accessible endpoints.
 
-📊 Risk Summary
-Security Finding	Severity
-Missing HSTS Header	Medium
-Missing CSP Header	Medium
-Missing Referrer-Policy Header	Low
-Missing Permissions-Policy Header	Low
-Accessible robots.txt	Low
-Wildcard CORS Configuration	Medium
-Exposed API Documentation	Medium
+---
 
-📂 Evidence Collected
-The following evidence was collected during the review process:
+## Risk Summary
 
-Nmap Results Review
+| Finding | Severity |
+|----------|----------|
+| Missing HSTS Header | Medium |
+| Missing CSP Header | Medium |
+| Missing Referrer-Policy Header | Low |
+| Missing Permissions-Policy Header | Low |
+| Accessible robots.txt | Low |
+| Wildcard CORS Configuration | Medium |
+| Exposed API Documentation | Medium |
 
-Nikto Findings Review
+---
 
-Directory Enumeration Review
+## Evidence Collected
 
-Remediation Recommendations Document
+- Screenshot 1: Nmap Results Review
+- Screenshot 2: Nikto Findings Review
+- Screenshot 3: Directory Enumeration Review
+- Screenshot 4: Remediation Recommendations
+- Screenshot 5: OWASP Security Headers Study
 
-OWASP Security Headers Study
+---
 
-📚 Learning Outcomes
-Through this task, the following skills and concepts were strengthened:
+## Learning Outcomes
 
-Vulnerability remediation planning
+- Improved understanding of vulnerability remediation processes.
+- Learned the importance of security headers in web application security.
+- Studied secure configuration practices and risk mitigation strategies.
+- Enhanced knowledge of vulnerability management methodologies.
+- Improved cybersecurity documentation and reporting skills.
+- Developed understanding of OWASP security best practices.
+- Strengthened knowledge of web application hardening techniques.
 
-Security risk assessment
-
-Web application hardening techniques
-
-Secure configuration management
-
-Security header implementation concepts
-
-OWASP security best practices
-
-Cybersecurity reporting and documentation
-
-Vulnerability management methodologies
+---
 
 
-✅ Conclusion
-The Vulnerability Remediation and Security Review activity provided valuable practical experience in analyzing security findings and understanding how vulnerabilities are mitigated in real-world environments. By reviewing assessment results and studying OWASP security recommendations, a deeper understanding of secure configuration practices, web application hardening, and vulnerability management processes was achieved. The task enhanced knowledge of defensive cybersecurity methodologies and demonstrated the importance of continuous security improvement in maintaining a strong security posture.
+## Conclusion
 
+The Vulnerability Remediation and Security Review activity provided valuable practical experience in analyzing security findings and understanding how vulnerabilities are mitigated in professional cybersecurity environments. By reviewing assessment results and studying OWASP security recommendations, a deeper understanding of secure configuration practices, web application hardening, and vulnerability management processes was achieved.
 
+This task strengthened skills related to cybersecurity analysis, risk assessment, remediation planning, documentation, and security reporting while reinforcing the importance of continuous security improvement and proactive risk management.
+
+---
+
+## Author
+
+**Aditya Narke**  
+Sumerix Global Cybersecurity & Ethical Hacking Internship  
+Task 4 – Vulnerability Remediation and Security Review  
+June 2026
