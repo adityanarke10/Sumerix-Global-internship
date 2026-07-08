@@ -1,5 +1,4 @@
 
-ChatGPT said:
 Vulnerability Remediation and Security Review
 📌 Project Overview
 This repository contains Task 4 of the Sumerix Global Cybersecurity & Ethical Hacking Internship Program. The task focused on reviewing the vulnerabilities identified during the previous assessment of OWASP Juice Shop, understanding their security impact, studying remediation techniques, and preparing recommendations to improve the overall security posture of the application.
